@@ -1,64 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap');
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-:root {
-    --primary-color:rgb(13, 106, 134);
-    --primary-color-darker:rgb(9, 55, 70);
+    body {
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+      
+
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 2%;
+    }
+
+    .conteiner {
+      display: flex;
+      gap: 10%;
+      justify-content: center;
+      
+    }
+
+    .filha {
+      width: 20%;
+      border-radius: 5%;
+      
+    }
+
+    #bloco1 {
+      background: #b90000;
+    }
+
+    #bloco2 {
+      background: #e67a00;
+    }
+
+    #bloco3 {
+      background: #27c400;
+    }
+
+
+    .tarefas {
+      margin: 20px;
+      min-height: 120px;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    list-style: none;
+    }
+
+    li {
+  background: #eee;
+  color: #000;
+  margin: 5px 0;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
 }
 
-*{
-    box-sizing: border-box;
-    outline: 0;
+li span {
+  flex: 1;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background: var(--primary-color);
-    font-family: 'Open sans', sans-serif;
-    font-size: 1.3em;
-    line-height: 1.5em;
-}
-
-.container {
-    max-width: 640px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-form input, form label, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-form input {
-    font-size: 24px;
-    height: 50px;
-    padding: 0 20px;
-}
-
-form input:focus {
-    outline: 1px solid var(--primary-color);
-}
-
-form button {
-    border: none;
-    background: var(--primary-color);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    height: 50px;
-    cursor: pointer;
-    margin-top: 30px;
-}
-form button:hover {
-    background: var(--primary-color-darker);
-}
-
-
-.pausado {
-    color: red;
+button {
+  margin-left: 5px;
+  cursor: pointer;
 }
