@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
-
 <body>
+    <header>
 
-    <section class="container">
-        <h1>Lista de tarefas</h1>
-        <p>
-            <input type="text" name="" class="inputi-tarefa">
-            <button class="btn-tarefa">Adicionar nova tarefa</button>
-        </p>
+    </header>
 
-        <ul class="tarefas">
+    <main>
+        <h1>Dashboard</h1>
 
-        </ul>
+        <div class="conteiner">
+        <div class="filha" id="bloco1">
+            <h2>A fazer</h2>
 
-        <h2> Meu timer</h2>
-        <p class="relogio">00:00:00</p>
-        <p>
-            <button class="iniciar">iniciar</button>
-            <button class="pausar">pausar</button>
-            <button class="zerar">zerar</button>
-        </p>
-    </section>
+            <ul class="tarefas" data-status="todo"></ul>
+            <p>
+                <input type="text" class="inputi-tarefa">
+                <button type="button" class="abtn-taref"> Adicionar nova tarefa</button>
+            </p>
+        </div>
+        <div class="filha" id="bloco2">
+            <h2>Fazendo</h2>
 
-    <script src="./assets/js/main.js"></script>
+            <ul class="tarefas" data-status="doing"></ul>
+            
+        </div>
+        <div class="filha" id="bloco3">
+            <h2>Concluído</h2>
+
+            <ul class="tarefas" data-status="done"></ul>
+        </div>
+        </div>
+    </main>
+
+
+    <script src="assets/js/index.js"></script>
 </body>
-
 </html>
